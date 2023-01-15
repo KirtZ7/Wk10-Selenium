@@ -10,7 +10,7 @@ import java.time.Duration;
 public class Edgetest {
     public static void main(String[] args) {
         String baseURL ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"; //base url we are opening
-        System.getProperty("WebDriver.edge.driver", "src/drivers/msedgedriver.exe"); //set web driver
+        System.setProperty("WebDriver.edge.driver", "src/drivers/msedgedriver.exe"); //set web driver
 
         WebDriver driver = new EdgeDriver(); //create object
         driver.get(baseURL); //method to open url
