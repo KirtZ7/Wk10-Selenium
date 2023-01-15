@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
 
@@ -35,6 +36,8 @@ public class Edgetest {
         driver.findElement(By.name("password")).click(); // click on password field
         WebElement password = driver.findElement(By.name("password")); // goto password field
         password.sendKeys("admin123");//enter password in password field
+
+
 
         //driver.quit(); //close browser
 

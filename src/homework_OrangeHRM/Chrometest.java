@@ -42,6 +42,13 @@ public class Chrometest {
         WebElement password = driver.findElement(By.name("password")); // goto password field
         password.sendKeys("admin123");//enter password in password field
 
+
+        //Button click does not work. tried many ways.
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[normalize-space()='Login'])[1])]"))).click();
+        driver.findElement(By.xpath("(//button[normalize-space()='Login'])[1])]")).click();
+
+        driver.findElement(By.className("oxd-button oxd-button--medium oxd-button--main orangehrm-login-button")).click();
+
         driver.quit(); //close browser
     }
 }
